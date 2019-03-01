@@ -4,7 +4,7 @@ metadata:
   creationTimestamp: null
   labels:
     run: demo-node
-    name: demo-node
+  name: demo-node
 spec:
   replicas: 1
   selector:
@@ -18,7 +18,7 @@ spec:
         run: demo-node
     spec:
       containers:
-      - image: github_nilesh93_sealed-secrets-demo:latest
+      - image: gcr.io/platformer-1548145797691-y8qvy/github_nilesh93_sealed-secrets-demo:latest
         name: demo-node
         ports:
         - containerPort: 8000
