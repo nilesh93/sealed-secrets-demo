@@ -18,7 +18,7 @@ spec:
         run: demo-node
     spec:
       containers:
-      - image: nj93/hello-node
+      - image: github_nilesh93_sealed-secrets-demo:latest
         name: demo-node
         ports:
         - containerPort: 8000
