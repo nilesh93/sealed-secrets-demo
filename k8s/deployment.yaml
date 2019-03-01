@@ -20,6 +20,12 @@ spec:
       containers:
       - image: gcr.io/platformer-1548145797691-y8qvy/github_nilesh93_sealed-secrets-demo:latest
         name: demo-node
+        env:
+        - name: "foo"
+          valueFrom:
+            secretKeyRef:
+              name: my-secret
+              key: foo
         ports:
         - containerPort: 8000
         resources: 
